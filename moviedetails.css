@@ -1,0 +1,101 @@
+
+
+body
+{
+	margin: 30px;
+	
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.head{
+  margin-left: 30%;
+}
+
+#1 {
+  display: block;
+  margin-bottom: :2vh;
+  
+}
+#2 {
+  display: block;
+  margin-bottom: :2vh;
+  
+}
+#3 {
+  display: block;
+  margin-bottom: :2vh;
+  
+}
+
+
+
+.title
+{
+	background-color: #03FBCA;
+	height: 10vh;
+}
+.id
+{
+	background-color: #03FBCA;
+}
+
+.titleyear
+{
+	background-color: #03FBCA;
+}
+
+.fontclr
+{
+	color: white;
+}
+
+.vision
+{
+	display: none;
+}
+
+
+.header
+{
+	background-color: #1A9CF0;
+	height: 60%;
+}
+
+.listcolor
+{
+	background-color: #2A2C2C;
+}
+
+.srchclr
+{
+	background-color: #03EDD1;
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+input[type=text]:focus{
+  outline: 2px solid red;     /* oranges! yey */
+}
+

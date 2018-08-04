@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, user-scalability = no">
+
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+     <link rel="stylesheet" type="text/css" href="moviedetails.css">
+  
+      <script src="jquery-3.3.1.min.js"></script>
+
+
+
+</head>
+
+
+<body>
+	<div class="head">
+		<h1>welcome to movie search</h1></div>
+
+<div class="row " id="1">
+		<div class="col-4">
+		</div>
+
+		<div class="col-4" id="a">
+				<input type="Text" name="" placeholder="Title.." class="mov">
+			<button id="btn1" class="srchclr"> Search</button>
+		</div>
+		
+		
+	</div>
+	<div class="row" id="2">
+        <div class="col-4">
+		</div>
+
+		<div class="col-4" id="b">
+				<input type="Text" name="" placeholder="id.." class="mov">
+			<button id="btn2" class="srchclr"> Search</button>
+		</div>
+		<div class="col-4">
+			
+		</div>
+		
+	</div>
+<div class="row" id="3">
+		<div class="col-4">
+		</div>
+		<div class="col-4" id="c">
+			<input type="Text" name="" placeholder="Title.." class="mov1">
+			<input type="text" name="" placeholder="Year.." class="saal">
+
+
+			<button id="btn3" class="srchclr"> Search</button>
+		</div>
+		
+	</div>
+
+
+
+
+<div class="container vision" id="home">
+	<div class="row">
+		<div class="col-4">
+			
+		</div>
+		<div class="col-4">
+	<button style="background-color: black;">
+		<a href="index.html" style="color: white; font-size: 20px;"> Search Movie </a>
+	</button>
+</div>
+<div class="col-4">
+	
+</div>
+	</div>
+	
+</div>
+<br>
+
+
+
+<div class="container vision" id="errorhandle" style="background-color: #C3C4BE;">
+	<div class="row">
+		<div class="col-4"  ">
+          		
+		</div>
+		<div class="col-4">
+			<h4 > Movie is not in records</h4>
+		</div>
+		<div>
+			
+		</div>
+		
+	</div>
+	
+</div>
+
+
+<div class="container vision" id="ldr">
+<div class="row">
+	<div class="col-4">
+		
+	</div>
+	<div class="col-4">
+     <div class="loader"></div>
+		
+	</div>
+	<div class="col-4">
+		
+	</div>
+	
+</div>	
+</div>
+
+ <div class="container vision " id="moviedisplay">
+  <div class="row  header">
+    <div class=" col-sm-12 col-lg-4 col-xs-12 col-md-8">
+    	 <div class="img ">
+			
+		</div>
+    	
+     
+    </div>
+    <div class="col-sm-12 col-lg-4 col-xs-12 col-md-4">
+      
+      <div>
+		<h3 class="name fontclr">
+			
+		</h3>
+		<hr>
+	</div>
+	  <div class="plot fontclr">
+	  	
+	  </div>
+	  <hr>
+	<div >
+	<span><h6 class="fontclr">Release Date :</h6></span><span class="release"></span>
+	
+</div>
+
+<div>
+	<span><h6 class="fontclr">Duration :</h6></span><span class="runtime"></span>
+	
+</div>
+
+<div>
+	<span><h6 class="fontclr">Type :</h6></span><span class="genre"></span>
+
+	
+</div>
+    </div>
+    <div class="col col-lg-4 col-sm-12">
+      	<div class="accordion" id="accordionExample">
+  <div class="card">
+    <div class="card-header listcolor" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-link " type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne ">
+         Casting
+        </button>
+      </h5>
+    </div>
+
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+      <div class="card-body">
+        <div ><span class="border-0"><h4 >Actors:</h4></span><span class="actors"></span></div>
+        <div><span><h4>Directors:</h4></span><span class="directors"></span></div>
+        <div><span><h4>Writers:</h4></span><span class="writers"></span></div>
+         <div><span><h4>Year:</h4></span><span class="year"></span></div>
+
+
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header listcolor" id="headingTwo">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Imdb Details
+        </button>
+      </h5>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+      <div class="card-body">
+       <div><span><h4>Imdb Id:</h4></span><span class="imdbid"></span></div>
+        <div><span><h4>Rating:</h4></span><span class="rating"></span></div>
+         <div><span><h4>Voting:</h4></span><span class="voting"></span></div>
+        <div><span><h4>MetaScore:</h4></span><span class="metascore"></span></div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header listcolor" id="headingThree">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          More
+        </button>
+      </h5>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+      <div class="card-body">
+        <div><span><h4>Collection:</h4></span><span class="collection"></span></div>
+        <div><span><h4>Language:</h4></span><span class="language"></span></div>
+         <div><span><h4>Awards:</h4></span><span class="awards"></span></div>
+        <div><span><h4>Country:</h4></span><span class="country"></span></div>
+      </div>
+    </div> 
+  </div>
+</div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+		
+	
+</div>
+ 	
+ </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="moviedetails.js"></script>
+</html>
